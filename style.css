@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.style{
+    width:100%;
+    height:95vh;
+}
+.container{ 
+    width:100%;
+    height: 95vh;
+    background: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 90%;
+    height: 90vh;
+}
+.swiper-slide img{
+    width:100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
+}
+.swiper .swiper-pagination-bullet-active{
+    background: #fff;
+}
+.content{
+    font-family:'poppins', sans-serif;
+    color: white;
+    width: 45%;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    transform: translateY(100px);
+    animation: textup 4s linear infinite;
+}
+@keyframes  textup{
+    10%{
+        transform:translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    }
+body{
+    font-family: montserrat;
+}
+nav{
+    background: green;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: green;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a.hover{
+    background: url(forest.jpg);
+    transition: .5s;
+}
+.chechbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20;
+    }
+    a:hover,a.active{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+.section{
+    background: url(none) no-repeat;
+    background-size: cover;
+    height: calc(100vh-80px);
+}
+.paygate{
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height:100vh;
+    background: linear-gradient(90deg, #2ecc71 70%, #27ae60 40.1%);
+    padding-bottom: 70px;
+}
+.paygate form{
+    padding:20px;
+    width:700px;
+    background:#fff;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+.paygate form .row{
+    display:flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+.paygate form .row .col{
+    flex:1 1 250px;
+}
+.paygate form .row .col .title{
+    font-size:20px;
+    color: #333;
+    padding-bottom:5px;
+    text-transform:uppercase;
+}
+.paygate form .row .col .inputBox{
+    margin:15px 0;
+
+}
+.paygate form .row .col .inputBox span{
+    margin-bottom:10px;
+    display: block;
+}
+.paygate form .row .col .inputBox input{
+    width:100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size:15px;
+    text-transform:none;
+}
+
+.paygate form .submit{
+    width: 100%;
+    padding: 12px;
+    font-size:17px;
+    background: #27ae60;
+    color:#fff;
+    margin-top:5px;
+    cursor: pointer;
+}
+.paygate form .submit:hover{
+    background: #2ecc71;
+}
+.About_Us{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    color:darkblue;
+}
+    
+.About_Us .logo_img{
+    width:300px;
+    height: 300px;
+}
+.Contact_Us{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    color:darkblue;
+}
+
+.around_the_globe{
+    width:750px;
+    color: black;
+    background-color: white;
+    font-family: 'poppins', sans-serif;
+    position:fixed;
+    top:50px;
+    left: 400px;  
+    border-color:white;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-color: #f73333;
+    border-right-width: 7px;
+
+}
+
+.around_the_globe .content_box{
+    margin-left: 35px;
+}
+
+.around_the_globe_2{
+    width:750px;
+    color: black;
+    background-color: white;
+    font-family: 'poppins', sans-serif;
+    position:fixed;
+    top:275px;
+    left: 400px;  
+    border-color:white;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-color: #f73333;
+    border-right-width: 7px;
+}
+
+.around_the_globe_2 .content_box{
+    margin-left: 35px;
+}
+
+.around_the_globe_3{
+    width:750px;
+    color: black;
+    background-color: white;
+    font-family: 'poppins', sans-serif;
+    position:fixed;
+    top:475px;
+    left: 400px;  
+    border-color:white;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-color: #f73333;
+    border-right-width: 7px;
+}
+
+.around_the_globe_3 .content_box{
+    margin-left: 35px;
+}
+
+.boxing{
+    position:fixed;
+    top: 50px;
+    left:300px;
+    width:1000px;
+    height: 1300px;
+    background-color: white;
+    border-color:white;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    font-family: 'poppins', sans-serif;
+}
+.protected_forests{
+    text-align: center;
+}
+.contribution{
+    text-align: center;
+}
